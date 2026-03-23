@@ -1,0 +1,36 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+background-size: 700px;
+}
+.header{
+background-color: gray;
+background-size: cover;
+}
+.cover-img img{
+  height: 500px;
+  width
+  background-position: right;
+
+}
+.heading h2{
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  margin-left: 50px;
+}
+.heading{
+  background: transparent;
+}
+.nav-bar{
+  display: flex;
+  justify-content: space-between;
+}
+.menu{
+display:flex;
+gap:25px;
+list-style:none;
+margin: auto;
+}

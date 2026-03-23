@@ -1,0 +1,35 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+.header{
+height:100vh;
+background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+url("/images/cover.png");
+background-size:cover;
+background-position:right
+backdrop-filter:blur(10px);
+background-size: 700px;
+background-repeat: no-repeat;
+}
+.heading h2{
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  margin-left: 50px;
+}
+.heading{
+  background: transparent;
+}
+.nav-bar{
+  display: flex;
+  justify-content: space-between;
+}
+.menu{
+display:flex;
+gap:25px;
+list-style:none;
+margin: auto;
+}

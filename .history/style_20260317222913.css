@@ -1,0 +1,49 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+
+}
+.header{
+background-color: rgb(165, 161, 161);
+background-size: 200px;
+}
+.cover-img img{
+  height: 400px;
+  width:700px;
+  filter: blur(2px) brightness(60%);
+  margin-left: 900px;
+ background-size: cover;
+object-fit: cover;
+
+}
+.heading h2{
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  margin-left: 50px;
+  margin-top: 30px;
+ 
+}
+.heading p{
+   margin-left: 50px;
+   color: white;
+}
+.heading{
+  background: transparent;
+}
+.nav-bar{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  gap:40px;
+}
+.menu{
+display:flex;
+gap:25px;
+list-style:none;
+ margin-top: 40px;
+ color: white;
+ margin-left: 40px;
+}

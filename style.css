@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+  height: auto;
+  width: auto;
+
+
+}
+
+.cover-img img {
+  height: 500px;
+  width: 900px;
+  filter: blur(2px) brightness(60%);
+
+  background-size: cover;
+  object-fit: cover;
+  position: relative;
+}
+
+.nav-bar {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* LEFT SIDE */
+.heading {
+  width: 50%;
+  color: white;
+}
+
+.heading h2 {
+  font-weight: bold;
+  font-size: 25px;
+  margin: 0;
+  /* remove margin issues */
+}
+
+.heading p {
+  margin: 0;
+  font-size: 12px;
+  color: #ccc;
+}
+
+/* RIGHT SIDE */
+.menu {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  /* align right */
+  gap: 20px;
+  /* spacing */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.menu li {
+  white-space: nowrap;
+  /* FIX line break */
+  cursor: pointer;
+  font-size: 14px;
+}
+
+
+
+.header {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+
+  /* 👇 IMPORTANT: make image background */
+  background: url('/images/cover.png') center/cover no-repeat;
+    background-position: right center;
+
+  position: relative;
+  padding: 0 60px;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* darkness */
+  z-index: 1;
+}
+
+/* LEFT SIDE */
+.cover {
+  position: relative;
+  z-index: 2;
+  width: 50%;
+}
+
+.cover h1 {
+  font-size: 45px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.cover p {
+  color: #e0e0e0;
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 400px; /* VERY IMPORTANT */
+  margin-bottom: 25px;
+}
+
+.cover button {
+  padding: 12px 25px;
+  border: none;
+  background: linear-gradient(45deg, royalblue, blue);
+  color: white;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.cover button:hover {
+  transform: scale(1.05);
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 80px 60px;
+  background: white;
+  position: relative;
+}
+
+.pro-img {
+  width: 40%;
+  position: relative;
+}
+
+.pro-img img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  position: relative;
+  margin-top: -150px;
+  z-index: 3;
+}
+.highlight {
+  background-color: rgb(12, 14, 3);
+  color: white;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.highlight:hover {
+  background-color: #ff4d4d;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(255, 77, 77, 0.7);
+}
+
+.about-text {
+  width: 60%;
+  margin-top: -70px;
+}
+
+.about-text h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  position: relative;
+  
+}
+/* underline effect */
+.about-text h1::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: orange;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+}
+.about-text p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 15px;
+}
+.resume-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: linear-gradient(45deg, rgb(9, 116, 210), gold);
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: 0.3s ease;
+}
+
+.resume-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.skills {
+  margin-top: -80px; /* 👈 move upward */
+  padding: 60px 40px;
+  text-align: center;
+}
+.skill-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* 👈 center cards */
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  padding: 20px 30px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.card:hover {
+  background: black;
+  color: white;
+  transform: translateY(-5px);
+}
+
+.skills h2 {
+  text-align: center;
+  margin: 20px;
+}
+--------------------------------------------------
+
+.projects {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+}
+.projects h2{
+  text-align: left;
+  margin-left: 30px;
+}
+.project-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 40px;
+  margin-bottom: 60px;
+
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+.project-img {
+  width: 45%;
+}
+
+.project-img img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+.project-text {
+  width: 55%;
+}
+
+.project-text h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.tech {
+  color: orange;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.project-text p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
+.project-buttons {
+  margin-top: 15px;
+}
+
+.project-buttons a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 8px 18px;
+
+  border-radius: 25px;
+  text-decoration: none;
+
+  background: linear-gradient(45deg, orange, gold);
+  color: black;
+  font-size: 14px;
+
+  transition: 0.3s;
+}
+
+.project-buttons a:hover {
+  transform: scale(1.05);
+}
+
+
+---------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding: 80px 20px;
+  background: #f8f9fb;
+}
+.contact h2 {
+  text-align: center; 
+  font-size: 32px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.contact h2::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: orange;
+  position: absolute;
+  left: 47%;
+  bottom: -10px;
+  transform: translateX(-50%);
+}
+
+
+.contact-box {
+  margin: auto; 
+  width: fit-content;
+  background: white;
+  padding: 25px 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  text-align: left; 
+}
+.contact-box p {
+  font-size: 16px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.contact-box span {
+  font-weight: bold;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: black;
+  color: white;
+  font-size: 14px;
+}
