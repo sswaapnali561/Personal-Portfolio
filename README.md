@@ -49,17 +49,15 @@ A responsive and modern personal portfolio website built using **HTML** and **CS
 
 ## 🌍 Live Demo
 
-👉 [View Portfolio](https://your-username.github.io/your-repo-name/)
+👉 [View Portfolio]
 
 ---
 
 ## 📬 Contact
 
-* Email: [your-email@gmail.com](mailto:your-email@gmail.com)
-* Phone: +91 XXXXX XXXXX
+* Email: sswaapnali561@gmail.com
+* Phone: +91 8692833949
 
 ---
 
-## ©️ Copyright
 
-© 2026 Your Name. All rights reserved.
